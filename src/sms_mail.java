@@ -20,8 +20,8 @@ public class sms_mail {
         properties.put("mail.smtp.starttls.enable","true");  
         properties.put("mail.smtp.host","smtp.gmail.com");
         properties.put("mail.smtp.port","587");
-        String user="kumaryashav@gmail.com";
-        String pass="yashpal2711";
+        String user="your mail";
+        String pass="your password";
         Session session=Session.getInstance(properties, new Authenticator() {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
@@ -31,7 +31,7 @@ public class sms_mail {
         Date date=new Date();
         SimpleDateFormat simple=new SimpleDateFormat("dd/yyyy/mm");
         System.out.println(simple.format(date));
-        String client="yashavkumar91@gmail.com";
+        String client="receiver mail";
 
         //otp Generation are of two mentioned below
 

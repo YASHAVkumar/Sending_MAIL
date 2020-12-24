@@ -28,7 +28,7 @@ public class sending_mail {
         prop.put("mail.smtp.host","smtp.gmail.com");
         prop.put("mail.smtp.port","587");
         String from = "kumaryashav@gmail.com";
-        String pass="yashpal2711";
+        String pass="password";
         String to = "yashavkumar91@gmail.com";
 
         Session session=Session.getInstance(prop, new Authenticator() {
@@ -58,7 +58,7 @@ public class sending_mail {
             message.setSubject("This is the Subject Line! I done it dkjl ");
 
             // Now set the actual message
-            message.setText("Tune kya hi padna tuje kya jarut ha bachee ?tu kya hi kr lega bachee laokdls");
+            message.setText("Your Text here");
             String  html="<div class='container' style='color:purple'>" +
                     "<h1>Your Maximum Length is over now</h1>" +
                     "<h3>Length is  now getting over now </h3>" +
